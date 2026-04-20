@@ -19,6 +19,55 @@ header{
   text-align: center;
 }
 
+.hmascotas h1{
+  background-color: #8B4513;
+}
+
+.hmascotas h1:hover{
+  background-color: #A0522D;
+}
+.hmascotas{
+  background-color: chartreuse;
+}
+
+.hmascotas a{
+  color: #fff;
+  text-decoration: none;
+  background-color: #000000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.hmascotas a:hover{
+  background-color: #8B4513;
+}
+
+.volver{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  background-color: #000000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.volver img{
+  width: 30px;
+  height: 30px;
+  
+}
+
+article p{
+  line-height: 1.6;
+  color: rgb(0, 0, 0);
+  font-style: italic;
+  
+}
+
 header h1{
   font-size: 24px;
   background-color: #ff4500;
@@ -74,6 +123,8 @@ section{
   border-radius: 10px;
 }
 
+
+
 form{
   display: flex;
   flex-direction: column;
@@ -102,6 +153,7 @@ button:hover{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
+  background: linear-gradient(to left, #02f136, #8B4513);
 }
 
 .galeria img{
@@ -117,7 +169,7 @@ button:hover{
 article{
   margin: 20px;
   padding: 20px;
-  background-color: #1a1a1a;
+  background: linear-gradient(to left, #0099ff, #ffffff);
   border-radius: 10px;
 }
 
@@ -133,4 +185,104 @@ img{
   height: auto;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#sobre-mi h2{
+  margin-bottom: 20px;
+}
+
+.mascotas{
+  background-image: url("mediaimgs/fodonpet.png");
+  background-color: maroon;
+  
+}
+
+.modal{
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.modal-box{
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.cerrar{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: red;
+}
+
+.modal:target{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.menu-ul li a{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+}
+
+.menu-ul li a:hover img{
+  transform: scale(1.2);
+  transition: 0.2s;
+}
+
+.menu-ul li a:hover{
+  background-color: #fff;
+}
+
+.menu-ul li:nth-child(1) a::before{
+  content: "";
+  background: url(mediaimgs/working.png) no-repeat center;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.menu-ul li:nth-child(2) a::before{
+  content: "";
+  background: url(mediaimgs/project.png) no-repeat center;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.menu-ul li:nth-child(3) a::before{
+  content: "";
+  background: url(mediaimgs/contact-us.png) no-repeat center;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.menu-ul li:nth-child(4) a::before{
+  content: "";
+  background: url(mediaimgs/veterinary.png) no-repeat center;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
 }

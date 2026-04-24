@@ -286,3 +286,25 @@ img{
   height: 20px;
   display: inline-block;
 }
+
+article img{
+  background-size: cover;
+  background-position: center;
+}
+
+article{
+  width: auto;
+  height: 300px;
+}
+
+article p{
+  margin-top: 20px;
+}
+
+#pdeluna{
+  margin-top: 30px;
+}
+
+#pdebuddy{
+  margin-top: 10px;
+}

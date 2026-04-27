@@ -19,6 +19,12 @@ header{
   text-align: center;
 }
 
+nav ul{
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
 .hmascotas h1{
   background-color: #8B4513;
 }
@@ -106,9 +112,10 @@ nav ul{
   
 }
 
-nav ul li:nth-child(2),:nth-child(3),:nth-child(4){
-  margin-top: 10px;
-  
+nav ul li:nth-child(2),
+nav ul li:nth-child(3),
+nav ul li:nth-child(4){
+  margin-top: 10px; 
 }
 
 nav a:hover{
@@ -160,6 +167,7 @@ button:hover{
   width: 100%;
   border-radius: 10px;
   transition: 0.3s;
+  transition: transform 0.3s ease;
 }
 
 .galeria img:hover{
@@ -171,6 +179,8 @@ article{
   padding: 20px;
   background: linear-gradient(to left, #0099ff, #ffffff);
   border-radius: 10px;
+  width: auto;
+  height: 300px;
 }
 
 footer{
@@ -192,9 +202,7 @@ img{
 }
 
 .mascotas{
-  background-image: url("mediaimgs/fodonpet.png");
-  background-color: maroon;
-  
+  background: maroon url("mediaimgs/fodonpet.png") no-repeat center/cover;
 }
 
 .modal{
@@ -235,11 +243,11 @@ img{
   pointer-events: auto;
 }
 
-.menu-ul li a{
+.menu-ul li a::before{
   display: flex;
   align-items: center;
   gap: 10px;
-  
+  margin-right: 5px;
 }
 
 .menu-ul li a:hover img{
@@ -290,11 +298,6 @@ img{
 article img{
   background-size: cover;
   background-position: center;
-}
-
-article{
-  width: auto;
-  height: 300px;
 }
 
 article p{
